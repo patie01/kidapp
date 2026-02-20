@@ -1,0 +1,20 @@
+{
+  "name": "KindMind - Faith's Wellness App",
+  "short_name": "KindMind",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffe0f0",
+  "theme_color": "#ff69b4",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
