@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KindMind App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff69b4">
+</head>
+<body>
+
+  <header>
+    <h1>🌈 KindMind</h1>
+    <p>Faith's Gratitude & Feelings App</p>
+    <button onclick="toggleDarkMode()" class="dark-btn">🌙 Dark Mode</button>
+  </header>
+
+  <section>
+    <h2>How are you feeling today?</h2>
+    <div class="moods">
+      <button onclick="selectMood('😊 Happy')">😊 Happy</button>
+      <button onclick="selectMood('😔 Sad')">😔 Sad</button>
+      <button onclick="selectMood('😡 Angry')">😡 Angry</button>
+      <button onclick="selectMood('😴 Tired')">😴 Tired</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Write something kind 💛</h2>
+    <textarea id="journalText" placeholder="Today I am thankful for..."></textarea>
+    <button onclick="saveEntry()" class="save-btn">Save Entry</button>
+  </section>
+
+  <section>
+    <h2>My Entries 📖</h2>
+    <div id="entries"></div>
+  </section>
+<section>
+  <h2>Mood Tracker 📊</h2>
+  <canvas id="moodChart"></canvas>
+</section>
+
+<section>
+  <h2>Calm Down Corner 🧘‍♀️</h2>
+  <div class="breathing-container">
+    <div class="circle" id="circle"></div>
+    <p id="breathingText">Press Start</p>
+    <button onclick="startBreathing()" class="save-btn">Start Breathing</button>
+  </div>
+</section>
+
+  <footer>
+    <p>Made with 💖 by Faith - Grade 7</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
